@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  buildpack: sdk-for-nodejs
+  command: npm start
+  random-route: true
+  services:
+    - ALERTNOTIFICATION_INSTANCE_REPLACE_ME
+    - APPID_INSTANCE_REPLACE_ME
+    - MONGODB_INSTANCE_REPLACE_ME
+    - POSTGRESQL_INSTANCE_REPLACE_ME
